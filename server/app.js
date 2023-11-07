@@ -1,20 +1,10 @@
-const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
-const DB = 'mongodb://127.0.0.1:27017/AyBooks';
+require('./db/connection');
 
-mongoose.set("strictQuery", true);
-mongoose.connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    // useCreateIndex: true,
-    // useFindAndModify: false,
-}).then(() => {
-    console.log('Database connection successful.')
-}).catch((err) => {
-    console.log(`Database connection error: ${err}`)
-});
+// const Book = require('./model/book');
+// const Category = require('./model/category');
 
 // Middleware
 
