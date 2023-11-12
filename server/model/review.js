@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const review = new Schema({
+const reviewSchema = new Schema({
     book_id: {
         type: Schema.Types.ObjectId, ref: 'Book',
         required: true
@@ -29,7 +29,7 @@ const review = new Schema({
 );
 
 
-const Review = mongoose.model('review', review);
+const Review = mongoose.model('review', reviewSchema);
 
 module.exports = Review;
 

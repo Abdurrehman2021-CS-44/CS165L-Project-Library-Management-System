@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const credentials = new Schema({
+const credentialsSchema = new Schema({
     customer_id: {
         type: Schema.Types.ObjectId, ref: 'Customer',
         required: true,
@@ -29,6 +29,6 @@ const credentials = new Schema({
 );
 
 
-const Credentials = mongoose.model('credentials', credentials);
+const Credentials = mongoose.model('credentials', credentialsSchema);
 
 module.exports = Credentials;

@@ -1,0 +1,120 @@
+/*   ======================================================================   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   |                              DEVELOPER                             |   */
+/*   |                            AYESHA ASHFAQ                           |   */
+/*   |                                                                    |   */
+/*   |                                                                    |   */
+/*   ======================================================================   */
+
+
+/* CSS Reset */
+
+
+/* CSS Variables */
+:root {
+  --primary-color: #4b1e02;
+  /* Color in logo */
+  --secondary-color: #A77426;
+  --secondary-color: #c8a165;
+
+  --gradient-color: linear-gradient(90deg, #4b1e02, #92651d, rgb(182, 149, 99));
+  --gradient-color1: linear-gradient(90deg, #583101, #8B5E34, #E7BC91);
+
+  /* --background-color: #dddddd62; */
+  --background-color: #dddddd9b;
+  --font-color: black;
+  --font-family: 'Belleza', sans-serif;
+
+  --large-font-size: 4rem;
+  --medium-font-size: 3rem;
+  --small-font-size: 1.2rem;
+  --btn-font-size: 1rem;
+
+  --transition: transform 0.7s ease-in-out;
+
+  /* ====================================== */
+
+  /* Book Shelf */
+
+  --columns: 3;
+  --yellow: rgba(238, 188, 31, 1);
+  --pink: rgba(255, 82, 145, 1);
+  --blue: rgba(64, 98, 187, 1);
+  --green: rgba(6, 141, 126, 1);
+  --white: rgba(248, 255, 229, 1);
+
+  @media only screen and (max-width: 850px) {
+      --large-font-size: 3rem;
+      --medium-font-size: 2rem;
+      --small-font-size: 0.9rem;
+      --btn-font-size: 0.7rem;
+  }
+
+  @media only screen and (max-width: 420px) {
+      --large-font-size: 2rem;
+      --medium-font-size: 1.4rem;
+      --small-font-size: 0.6rem;
+      --btn-font-size: 0.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  color: var(--font-color);
+  background-color: var(--background-color);
+  font-weight: 200;
+}
+
+input {
+  font-family: var(--font-family);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ================= UTILITY CLASSES =================== */
+
+/*#region */
+
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  font-size: var(--btn-font-size);
+  width: 10rem;
+  height: 3rem;
+  background: transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.main-heading {
+  font-size: var(--medium-font-size);
+  font-weight: bold;
+  text-align: center;
+  margin: 1.5rem 0 1.6rem;
+}
+
+
+/*#endregion */
+

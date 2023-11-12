@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const book = new Schema({
+const bookSchema = new Schema({
     ISBN: {
         type: String,
         unique: true,
@@ -48,7 +48,7 @@ const book = new Schema({
 );
 
 
-const Book = mongoose.model('book', book);
+const Book = mongoose.model('book', bookSchema);
 
 module.exports = Book;
 

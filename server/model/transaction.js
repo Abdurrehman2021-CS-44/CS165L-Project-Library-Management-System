@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const transaction = new Schema({
+const transactionSchema = new Schema({
     order_id: {
         type: Schema.Types.ObjectId, ref: 'Order',
         required: true
@@ -26,7 +26,7 @@ const transaction = new Schema({
 );
 
 
-const Transaction = mongoose.model('transaction', transaction);
+const Transaction = mongoose.model('transaction', transactionSchema);
 
 module.exports = Transaction;
 

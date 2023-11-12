@@ -6,6 +6,10 @@ require('./db/connection');
 // const Book = require('./model/book');
 // const Category = require('./model/category');
 
+app.use(express.json());
+
+app.use(require('./router/auth'));
+
 // Middleware
 
 const middleware = (req, res, next) => {
@@ -14,6 +18,8 @@ const middleware = (req, res, next) => {
 }
 
 // middleware();
+
+
 
 app.get('/', (req, res) => {
     res.send('AyBook store, a heaven for Book Readers')

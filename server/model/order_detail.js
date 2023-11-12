@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const order_detail = new Schema({
+const order_detail_schema = new Schema({
     order_id: {
         type: Schema.Types.ObjectId, ref: 'Order',
         required: true
@@ -29,7 +29,7 @@ const order_detail = new Schema({
 );
 
 
-const Order_detail = mongoose.model('order_detail', order_detail);
+const Order_detail = mongoose.model('order_detail', order_detail_schema);
 
 module.exports = Order_detail;
 

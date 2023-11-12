@@ -1,0 +1,264 @@
+nav {
+    z-index: 20;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 4.15rem;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFFad;
+}
+
+nav .logo {
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img {
+    width: 20%;
+}
+
+.hamburger {
+    width: 6%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    margin: 2.5px auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: black;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navMenu {
+    position: fixed;
+    left: -100%;
+    /* top: 11%; */
+    top: 4.15rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffad;
+    text-align: center;
+    width: 20%;
+    height: 100vh;
+    transition: 0.5s;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    /* margin: 15px auto; */
+
+    /* padding: 10px 0; */
+    padding: 10px 0;
+    /* margin: 6px 0; */
+    margin: 5px 0;
+    /* height: 50px; */
+    height: 45px;
+    transition: all 0.1s ease-in-out;
+    /* border-radius: 0 30px; */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-item a {
+    color: var(--primary-color);
+}
+
+.nav-item:nth-child(2) {
+    margin-top: 0 !important;
+}
+
+.navMenu.active {
+    left: 0;
+}
+
+.library-logo img {
+    width: 45%;
+    margin: 0 10px !important;
+}
+
+.search {
+    margin-right: -1.7rem;
+}
+
+.cart {
+    margin-right: -1rem;
+}
+
+.search img {
+    width: 40%;
+    cursor: pointer;
+}
+
+.cart img {
+    width: 40%;
+    cursor: pointer;
+}
+
+
+/* ========== Shop (Sub-Menu Dropdown) ================= */
+
+.shop:hover .shop-dropdown {
+    display: initial;
+}
+
+.shop {
+    color: var(--primary-color);
+}
+
+.shop span {
+    font-size: 1.5rem;
+    transition: all 0.4s;
+    color: var(--primary-color);
+}
+
+.shop:hover span {
+    margin-left: 13px;
+}
+
+.shop-dropdown {
+    width: 10rem;
+    height: 14rem;
+    position: absolute;
+    left: 100.3%;
+    top: 30%;
+    display: none;
+    background-color: #cfcfcf;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.shop-dropdown li {
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    padding: 10px 0;
+    /* margin: 2px 0; */
+    height: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.shop-dropdown li:nth-child(1):hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top-right-radius: 15px;
+}
+
+.shop-dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* ================= Responsiveness (IPad Air) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 850px) {
+
+
+    .navMenu {
+        width: 22%;
+    }
+
+    .shop-dropdown {
+        top: 12.4%;
+    }
+
+}
+
+/*#endregion */
+
+
+/* ================= Responsiveness (IPhone 12 Pro) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 420px) {
+
+    .hamburger {
+        margin-left: 0.5rem;
+    }
+
+    nav .logo img {
+        width: 40%;
+    }
+
+    .search,
+    .cart {
+        margin-right: -2.5rem;
+    }
+
+    .search img {
+        width: 32%;
+    }
+
+    .cart img {
+        width: 32%;
+    }
+
+
+    .navMenu {
+        width: 25%;
+    }
+
+    .nav-item {
+        font-weight: 500;
+        padding: 8px 0;
+        margin: 4px 0;
+        height: 30px;
+    }
+
+
+    .shop span {
+        font-size: 0.8rem;
+    }
+
+    .shop-dropdown {
+        top: 13%;
+        height: 9rem;
+        width: 8rem;
+
+    }
+
+    .shop-dropdown li {
+        padding: 10px 0;
+        height: 32px;
+        transition: all 0.2s ease-in-out;
+    }
+
+}
+
+/*#endregion */
+
+

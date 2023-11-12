@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const stock = new Schema({
+const stockSchema = new Schema({
     book_id: {
         type: Schema.Types.ObjectId, ref: 'Book',
         required: true
@@ -31,6 +31,6 @@ const stock = new Schema({
 );
 
 
-const Stock = mongoose.model('stock', stock);
+const Stock = mongoose.model('stock', stockSchema);
 
 module.exports = Stock;
