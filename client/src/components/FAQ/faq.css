@@ -1,0 +1,152 @@
+.faq-section {
+    margin: 4rem 3rem;
+    display: flex;
+}
+
+.procedure {
+    margin: 0 1rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transform: scale(0.8);
+}
+
+.procedure .step {
+    height: 14rem;
+    /* width: 10rem; */
+    border-radius: 50%;
+    background: var(--gradient-color);
+    color: var(--primary-color);
+    color: #e8e0d7;
+    color: #2e1800;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.9rem;
+    width: 21%;
+    text-transform: capitalize;
+}
+
+.procedure .step:nth-child(even) {
+    margin-top: 8rem;
+}
+
+.topics,
+.questions {
+    margin: 0 2rem;
+    /* padding: 1rem; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.topics {
+    width: 30%;
+    height: 22rem;
+    padding: 2rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.topics p {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.topics p:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.questions {
+    width: 70%;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 10px;
+    /* color: #777; */
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2796";
+}
+
+.panel {
+    display: none;
+    line-height: 1.2;
+    padding: 8px 10px;
+    padding: 20px 18px;
+    background-color: #EAEAEA;
+    background-color: #f7f7f7;
+    color: #444;
+    font-size: 0.9rem;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
+
+/* ================= Responsiveness (IPad Air) =================== */
+
+/*#region */
+
+@media only screen and (max-width: 850px) {}
+
+/*#endregion */
+
+
+/* ================= Responsiveness (IPhone 12 Pro) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 420px) {
+
+    .faq-section {
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+
+    .topics,
+    .questions {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    .accordion {
+        padding: 15px;
+    }
+
+
+    .accordion:after {
+        font-size: 7px;
+        margin-left: 0;
+    }
+
+
+    .panel {
+        padding: 16px 15px;
+    }
+
+}
+
+/*#endregion */

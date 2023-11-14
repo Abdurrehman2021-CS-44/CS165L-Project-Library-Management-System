@@ -1,0 +1,177 @@
+footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    background-color: #bd9667;
+}
+
+footer .info {
+    padding: 3rem 5rem;
+    display: flex;
+    /* align-items: center; */
+}
+
+footer .info .logo-detail {
+    padding-right: 1rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info .logo-detail img {
+    width: 40%;
+}
+
+footer .info .logo-detail p {
+    font-size: var(--small-font-size);
+}
+
+
+footer .social-links {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-links .link-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-links div {
+    display: flex;
+    margin: 0.4rem 0;
+}
+
+footer .social-links div p {
+    font-size: var(--small-font-size);
+}
+
+footer .social-links img {
+    width: 22px;
+    height: 22px;
+    margin-right: 0.8rem;
+}
+
+footer .contact-us {
+    padding-top: 2rem;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact-us .contact-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .contact-us img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.8rem;
+}
+
+footer .contact-us div {
+    display: flex;
+    margin: 0.4rem 0;
+}
+
+footer .copyright {
+    padding: 1rem;
+    background-color: #242424;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ================= Responsiveness (IPad Air) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 850px) {
+
+    footer .info {
+        padding: 2rem;
+        display: flex;
+        /* align-items: center; */
+    }
+
+    footer .social-links {
+        padding-left: 1rem;
+    }
+
+}
+
+/*#endregion */
+
+
+/* ================= Responsiveness (IPhone 12 Pro) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 420px) {
+
+
+    footer .info {
+        padding: 2rem 1rem;
+    }
+
+    footer .info .logo-detail {
+        padding-right: 0.5rem;
+        width: 33%;
+    }
+
+    footer .info .logo-detail img {
+        width: 50%;
+    }
+
+    footer .social-links {
+        padding-left: 1rem;
+    }
+
+    footer .social-links .link-heading {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer .social-links div {
+        margin: 0.4rem 0;
+    }
+
+    footer .social-links img {
+        width: 12px;
+        height: 12px;
+        margin-right: 0.5rem;
+    }
+
+    footer .contact-us {
+        margin-left: 0.5rem;
+    }
+
+    footer .contact-us .contact-heading {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    footer .contact-us img {
+        width: 12px;
+        height: 12px;
+        margin-right: 0.5rem;
+    }
+
+    footer .contact-us div {
+        margin: 0.4rem 0;
+    }
+
+    footer .contact-us div p {
+        font-size: 0.5rem;
+    }
+
+}
+
+/*#endregion */

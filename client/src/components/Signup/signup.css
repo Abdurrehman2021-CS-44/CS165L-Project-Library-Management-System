@@ -1,0 +1,121 @@
+.login-signup {
+    margin: 5rem 2rem;
+    padding: 0 14rem;
+    display: flex;
+}
+
+.login,
+.signup {
+    width: 100%;
+    margin: 1rem 8rem;
+    padding: 5rem 3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-signup .heading {
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    line-height: 2;
+}
+
+.login-signup .info {
+    line-height: 3;
+    color: #989898;
+}
+
+.login-signup input {
+    height: 2.3rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0.6rem 0;
+    border: none;
+    outline: none;
+    background-color: #F6F6F6;
+}
+
+.login-signup button a {
+    color: var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.login-signup button {
+    margin-top: 1rem;
+    border: 1px solid var(--secondary-color);
+    transition: all 0.4s ease-in-out;
+}
+
+.login-signup button:hover a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.login-signup button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* ================= Responsiveness (IPad Air) =================== */
+
+/*#region */
+
+@media only screen and (max-width: 850px) {
+
+    .login-signup {
+        margin: 5rem 2rem;
+        padding: 0 4rem;
+    }
+
+    .login,
+    .signup {
+        width: 100%;
+        margin: 1rem 5rem;
+        padding: 5rem 3rem;
+    }
+
+}
+
+/*#endregion */
+
+
+/* ================= Responsiveness (IPhone 12 Pro) =================== */
+
+/*#region */
+
+
+@media only screen and (max-width: 420px) {
+
+    .login-signup {
+        margin: 2rem 2rem;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .login,
+    .signup {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .login-signup .heading {
+        font-size: var(--small-font-size);
+        font-weight: 600;
+        line-height: 2;
+    }
+
+    .login-signup .info {
+        font-size: 0.7rem;
+        line-height: 3;
+        color: #989898;
+    }
+
+    .login-signup input {
+        height: 1.3rem;
+        padding: 0.5rem 0.6rem;
+        margin: 0.4rem 0;
+        font-size: 0.5rem;
+    }
+}
+
+/*#endregion */
