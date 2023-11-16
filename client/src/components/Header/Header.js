@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import './header.css';
 
 // import { AyBooks_logo_removebg, AyBooks_name_removebg, cart, search } from 'assets';
-import AyBooks_logo from '../../assets/AyBooks_name.png';
+import AyBooks_logo from '../../assets/AyBooks_logo.png';
 import AyBooks_name from '../../assets/AyBooks_name.png';
 import cart from '../../assets/cart.png';
 import search from '../../assets/search.png';
+
 
 // ================  IMPORT  IMAGES  ================= //
 
@@ -14,22 +15,19 @@ import search from '../../assets/search.png';
 //     return r.keys().map(r);
 // }
 // const images = importAll(require.context('../../assets/', false, /\.(png|jpe?g|svg)$/));
-const a = require.context('../../assets/', false);
-const b = a.keys().map(image => a(image));
+// const a = require.context('../../assets/', false);
+// const b = a.keys().map(image => a(image));
 // console.log(imageList[0]);
 
-let images = [];
+// let images = [];
 
-b.forEach(e => {
-    let img = e.split("/");
-    images.push(img[img.length - 1]);
-    
-});
+// b.forEach(e => {
+//     let img = e.split("/");
+//     images.push(img[img.length - 1]);
+// });
 
 // console.log(imgList[0]);
-
 // const myArray = imageList.split("/");
-
 
 // =================================================== //
 
@@ -76,5 +74,26 @@ const Header = () => {
         </div >
     )
 }
+
+
+// =================================================== //
+
+// const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".navMenu");
+
+// hamburger.addEventListener("click", () => {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// })
+
+// document.querySelectorAll(".nav-link").forEach(element => {
+//     element.addEventListener("click", () => {
+//         hamburger.classList.remove("active");
+//         navMenu.classList.remove("active");
+//     })
+// });
+
+// =================================================== //
+
 
 export default Header
