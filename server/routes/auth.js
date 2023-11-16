@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-require('../db/connection');
+require('../db/conn');
 const Book = require('../model/book');
 const Category = require('../model/category');
 

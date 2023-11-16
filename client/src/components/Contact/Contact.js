@@ -5,7 +5,6 @@ import '../Contact/contact.css';
 const Contact = () => {
     return (
         <div>
-            <h1>Contact Page</h1>
             <div className="contact-form">
                 <div className="text">
                     <span>Contact</span>

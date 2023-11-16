@@ -10,6 +10,7 @@
 
 /* CSS Reset */
 
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* CSS Variables */
 :root {
@@ -45,23 +46,35 @@
   --white: rgba(248, 255, 229, 1);
 
   @media only screen and (max-width: 850px) {
-    --large-font-size: 3rem;
-    --medium-font-size: 2rem;
-    --small-font-size: 0.9rem;
-    --btn-font-size: 0.7rem;
+      --large-font-size: 3rem;
+      --medium-font-size: 2rem;
+      --small-font-size: 0.9rem;
+      --btn-font-size: 0.7rem;
   }
 
   @media only screen and (max-width: 420px) {
-    --large-font-size: 2rem;
-    --medium-font-size: 1.4rem;
-    --small-font-size: 0.6rem;
-    --btn-font-size: 0.5rem;
+      --large-font-size: 2rem;
+      --medium-font-size: 1.4rem;
+      --small-font-size: 0.6rem;
+      --btn-font-size: 0.5rem;
   }
 }
 
 html {
   scroll-behavior: smooth;
   font-family: var(--font-family);
+  /* font-family: 'Belleza', sans-serif !important; */
+
+  color: var(--font-color);
+  background-color: var(--background-color);
+  font-weight: 200;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  /* font-family: 'Belleza', sans-serif !important; */
+
   color: var(--font-color);
   background-color: var(--background-color);
   font-weight: 200;
@@ -115,40 +128,5 @@ a {
   margin: 1.5rem 0 1.6rem;
 }
 
-
-/*#endregion */
-
-
-/* ================= Responsiveness (IPad Air) =================== */
-
-/*#region */
-
-@media only screen and (max-width: 850px) {
-
-  .btn {
-    padding: 0.5rem 1.1rem;
-    width: 8rem;
-    height: 2rem;
-  }
-
-}
-
-/*#endregion */
-
-
-/* ================= Responsiveness (IPhone 12 Pro) =================== */
-
-/*#region */
-
-
-@media only screen and (max-width: 420px) {
-
-  .btn {
-    padding: 0.3rem 0.9rem;
-    width: 7rem;
-    height: 1.8rem
-  }
-
-}
 
 /*#endregion */

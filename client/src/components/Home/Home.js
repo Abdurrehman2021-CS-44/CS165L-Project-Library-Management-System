@@ -1,6 +1,15 @@
 import React from 'react'
 import '../Home/home.css';
 
+// ================  IMPORT  IMAGES  ================= //
+
+import book_ad from '../../assets/book_ad.jpg';
+import urduTimes from '../../assets/urduTimes.png';
+import jang from '../../assets/jang.png';
+import caravan from '../../assets/caravan.png';
+import kawish from '../../assets/kawish.png';
+
+// =================================================== //
 
 const Home = () => {
     return (
@@ -48,7 +57,7 @@ const Home = () => {
                         the treasures hidden within your creative heart.</p>
                 </div>
                 <div class="intro-img">
-                    <img class="img1" src="img/book-ad.jpg" />
+                    <img src={book_ad} />
                 </div>
             </div>
 
@@ -96,10 +105,10 @@ const Home = () => {
                     <h1><span>Our </span>Publishers</h1>
                 </div>
                 <div class="partners-grid">
-                    <img class="img1" src="img/urduTimes-removebg.png" />
-                    <img class="img1" src="img/jang-removebg.png" />
-                    <img class="img1" src="img/caravan-removebg.png" />
-                    <img class="img1" src="img/kawish.png" />
+                    <img src={urduTimes} />
+                    <img src={jang} />
+                    <img src={caravan} />
+                    <img src={kawish} />
                 </div>
 
             </div>

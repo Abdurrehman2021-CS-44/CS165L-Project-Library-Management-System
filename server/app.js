@@ -1,14 +1,14 @@
 const express = require('express');
 const app = express();
 
-require('./db/connection');
+require('./db/conn');
 
 // const Book = require('./model/book');
 // const Category = require('./model/category');
 
 app.use(express.json());
 
-app.use(require('./router/auth'));
+app.use(require('./routes/auth'));
 
 // Middleware
 
