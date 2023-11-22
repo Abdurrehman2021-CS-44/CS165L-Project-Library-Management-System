@@ -14,9 +14,9 @@ router.get('/', (req, res) => {
 
 // router.post('/about', (req, res) => {
 
-//     const { ISBN, title, author, edition, category_id, price, publisher } = req.body;
+//     const { ISBN, title, author, edition, category_id, price, publisher , img_path} = req.body;
 
-//     if (!ISBN || !title || !author || !edition || !category_id || !price || !publisher) {
+//     if (!ISBN || !title || !author || !edition || !category_id || !price || !publisher || 1img_path) {
 //         return res.status(422).json({ error: "Fill all fields" });
 //     }
 
@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 //                 return res.status(422).json({ error: "Book with this ISBN already exists" });
 //             }
 
-//             const book = new Book({ ISBN, title, author, edition, category_id, price, publisher });
+//             const book = new Book({ ISBN, title, author, edition, category_id, price, publisher, img_path});
 
 //             book.save().then(() => {
 //                 res.status(201).json({ message: 'Book added successfully' });
@@ -40,9 +40,9 @@ router.get('/', (req, res) => {
 
 router.post('/about', async (req, res) => {
 
-    const { ISBN, title, author, edition, category_id, price, publisher } = req.body;
+    const { ISBN, title, author, edition, category_id, price, publisher, img_path } = req.body;
 
-    if (!ISBN || !title || !author || !edition || !category_id || !price || !publisher) {
+    if (!ISBN || !title || !author || !edition || !category_id || !price || !publisher || !img_path) {
         return res.status(422).json({ error: "Fill all fields" });
     }
 
@@ -52,7 +52,7 @@ router.post('/about', async (req, res) => {
             return res.status(422).json({ error: "Book with this ISBN already exists" });
         }
 
-        const book = new Book({ ISBN, title, author, edition, category_id, price, publisher });
+        const book = new Book({ ISBN, title, author, edition, category_id, price, publisher, img_path});
         // const bookAdd = await book.save();
         if (await book.save()) {
             res.status(201).json({ message: 'Book added successfully' });

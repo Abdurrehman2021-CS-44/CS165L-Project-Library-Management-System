@@ -6,6 +6,9 @@ import '../Login/login.css';
 const Login = () => {
     return (
         <div>
+            <div class="shop-bg">
+                <p>Login</p>
+            </div>
             <div class="login-signup">
                 <div class="login">
                     <p class="heading">REGISTERED CUSTOMERS</p>

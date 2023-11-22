@@ -28,6 +28,7 @@
 }
 
 #filters nav#menu-area {
+    z-index: 0;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #fff;

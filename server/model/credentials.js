@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const credentialsSchema = new Schema({
-    customer_id: {
-        type: Schema.Types.ObjectId, ref: 'Customer',
-        required: true,
-    },
     username: {
         type: String,
         required: true,
@@ -13,6 +9,14 @@ const credentialsSchema = new Schema({
     password: {
         type: String,
         required: true,
+    },
+    user_id: {
+        type: Schema.Types.ObjectId,
+        required: true,
+    },
+    is_admin: {
+        type: Boolean,
+        default: false
     },
     active: {
         type: Boolean,

@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
 
                 <div class="copyright">
-                    All rights reserved. &nbsp; <span>&copy</span> Ayesha Ashfaq.
+                    All rights reserved. &nbsp; <span>&copy;</span> Ayesha Ashfaq.
                 </div>
             </footer>
         </div>

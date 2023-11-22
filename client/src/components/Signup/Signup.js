@@ -6,6 +6,9 @@ import '../Signup/signup.css';
 const Signup = () => {
     return (
         <div>
+            <div class="shop-bg">
+                <p>Registration</p>
+            </div>
             <div class="login-signup">
                 <div class="signup">
                     <p class="heading">NEW CUSTOMERS</p>

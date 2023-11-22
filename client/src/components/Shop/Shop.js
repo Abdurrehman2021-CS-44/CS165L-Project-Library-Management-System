@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Shop/shop.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesLeft, faAngleLeft, faAngleRight, faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 // ================  IMPORT  IMAGES  ================= //
 
@@ -16,6 +18,10 @@ import kawish from '../../assets/kawish.png';
 const Shop = () => {
     return (
         <div>
+
+            <div class="shop-bg">
+                <p>Shop Books</p>
+            </div>
 
             <div id="filters">
                 <nav id="menu-area">
@@ -67,8 +73,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -81,8 +87,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -96,8 +102,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -110,8 +116,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -124,8 +130,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -138,8 +144,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -154,8 +160,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -168,8 +174,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -183,8 +189,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -197,8 +203,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -211,8 +217,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -225,8 +231,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -239,8 +245,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -253,8 +259,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -267,8 +273,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -283,8 +289,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -297,8 +303,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -312,8 +318,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -326,8 +332,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -340,8 +346,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -354,8 +360,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -368,8 +374,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -382,8 +388,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -396,8 +402,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -410,8 +416,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -424,8 +430,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -439,8 +445,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -453,8 +459,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -467,8 +473,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -481,8 +487,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -495,8 +501,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -509,8 +515,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -523,8 +529,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -537,8 +543,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -551,8 +557,8 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
@@ -565,33 +571,33 @@ const Shop = () => {
                     <div class="toggle-info">
                         <p>Add to Cart</p>
                         <div class="img">
-                            <img class="view" src={eye.png} />
-                            <img class="wishlist" src={wishlist.png} />
+                            <img class="view" src={eye} />
+                            <img class="wishlist" src={wishlist} />
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="pagination">
-                <button class="button" id="startBtn" disabled>
-                    <i class="fa-solid fa-angles-left"></i>
+            <div className="pagination">
+                <button className="button" id="startBtn" disabled>
+                    <FontAwesomeIcon icon={faAnglesLeft} />
                 </button>
-                <button class="button prevNext" id="prev" disabled>
-                    <i class="fa-solid fa-angle-left"></i>
+                <button className="button prevNext" id="prev" disabled>
+                    <FontAwesomeIcon icon={faAngleLeft} />
                 </button>
-                <div class="links">
-                    <Link to="/" class="link active">1</Link>
-                    <Link to="/" class="link">2</Link>
-                    <Link to="/" class="link">3</Link>
-                    <Link to="/" class="link">4</Link>
-                    <Link to="/" class="link">5</Link>
+                <div className="links">
+                    <Link to="/" className="link active">1</Link>
+                    <Link to="/" className="link">2</Link>
+                    <Link to="/" className="link">3</Link>
+                    <Link to="/" className="link">4</Link>
+                    <Link to="/" className="link">5</Link>
                 </div>
-                <button class="button prevNext" id="next">
-                    <i class="fa-solid fa-angle-right"></i>
+                <button className="button prevNext" id="next">
+                    <FontAwesomeIcon icon={faAngleRight} />
                 </button>
-                <button class="button" id="endBtn">
-                    <i class="fa-solid fa-angles-right"></i>
+                <button className="button" id="endBtn">
+                    <FontAwesomeIcon icon={faAnglesRight} />
                 </button>
             </div>
 

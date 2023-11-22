@@ -1,10 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../FAQ/faq.css';
 
 const FAQ = () => {
-    return (
-        <div>
 
+    useEffect(() => {
+        const handleAccordionClick = (event) => {
+            const { target } = event;
+            target.classList.toggle('active');
+            const panel = target.nextElementSibling;
+            panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+        };
+
+        const accElements = document.getElementsByClassName('accordion');
+
+        Array.from(accElements).forEach((element) => {
+            element.addEventListener('click', handleAccordionClick);
+        });
+
+        return () => {
+            Array.from(accElements).forEach((element) => {
+                element.removeEventListener('click', handleAccordionClick);
+            });
+        };
+    });
+
+    return (
+
+        <div>
+            <div class="shop-bg">
+                <p>Frequently Asked Questions</p>
+            </div>
             <div class="faq-section">
                 <div class="topics">
                     <p>Payment</p>
@@ -63,24 +88,23 @@ const FAQ = () => {
 
 // ======================================== //
 
-if (document.getElementsByClassName("accordion")) {
+// if (document.getElementsByClassName("accordion")) {
 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+//     var acc = document.getElementsByClassName("accordion");
+//     var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
-}
+//     for (i = 0; i < acc.length; i++) {
+//         acc[i].addEventListener("click", function () {
+//             this.classList.toggle("active");
+//             var panel = this.nextElementSibling;
+//             if (panel.style.display === "block") {
+//                 panel.style.display = "none";
+//             } else {
+//                 panel.style.display = "block";
+//             }
+//         });
+//     }
+// }
 
 // ======================================== //
 

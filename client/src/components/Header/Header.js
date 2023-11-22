@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
@@ -33,6 +33,43 @@ import search from '../../assets/search.png';
 
 
 const Header = () => {
+
+    useEffect(() => {
+        const handleHamburgerClick = () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navMenu");
+
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        };
+
+        const handleNavLinkClick = () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".navMenu");
+
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        };
+
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navMenu");
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener("click", handleHamburgerClick);
+
+            document.querySelectorAll(".nav-link").forEach(element => {
+                element.addEventListener("click", handleNavLinkClick);
+            });
+
+            return () => {
+                hamburger.removeEventListener("click", handleHamburgerClick);
+                document.querySelectorAll(".nav-link").forEach(element => {
+                    element.removeEventListener("click", handleNavLinkClick);
+                });
+            };
+        }
+    });
+
     return (
         <div>
             <header>
