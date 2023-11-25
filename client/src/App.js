@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header/Header'
+import AdminDashboard from './components/Header/AdminDashboard'
+import Footer from './components/Book/Book'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Contact from './components/Contact/Contact'
@@ -15,7 +17,8 @@ import Signup from './components/Signup/Signup'
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <AdminDashboard />
 
         <Routes>
           <Route exact path="/" element={<Home />} />

@@ -6,7 +6,7 @@ import './header.css';
 import AyBooks_logo from '../../assets/AyBooks_logo.png';
 import AyBooks_name from '../../assets/AyBooks_name.png';
 import cart from '../../assets/cart.png';
-import search from '../../assets/searchHeader.png';
+import search from '../../assets/search.png';
 
 
 // ================  IMPORT  IMAGES  ================= //
@@ -32,7 +32,7 @@ import search from '../../assets/searchHeader.png';
 // =================================================== //
 
 
-const Header = () => {
+const AdminDashboard = () => {
 
     useEffect(() => {
         const handleHamburgerClick = () => {
@@ -82,31 +82,31 @@ const Header = () => {
 
                     <ul className="navMenu">
                         <li className="library-logo"><img src={AyBooks_logo} alt="logo" /></li>
-                        <li className="nav-item"> <Link className="nav-link" to="/">Home</Link> </li>
-                        <li className="nav-item shop"> <Link className="nav-link" to="">Catalog <span>&rsaquo;</span> </Link>
+                        <li className="nav-item"> <Link className="nav-link" to="/">Books</Link> </li>
+                        {/* <li className="nav-item shop"> <Link className="nav-link" to="">Catalog <span>&rsaquo;</span> </Link>
                             <ul className="shop-dropdown">
                                 <li> <Link className="nav-link" to="/shop">Books</Link> </li>
                                 <li> <Link className="nav-link" to="/">Cart</Link> </li>
                                 <li> <Link className="nav-link" to="/">Wishlist</Link> </li>
                                 <li> <Link className="nav-link" to="/">Checkout</Link> </li>
                             </ul>
-                        </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/login">Login</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/signup">SignUp</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/faq">FAQ</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/contact">Privacy Policy</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/contact">Contact</Link> </li>
+                        </li> */}
+                        <li className="nav-item"> <Link className="nav-link" to="/login">Customers</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/signup">Category</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/faq">Orders</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/contact">Reviews</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/contact">Feedback</Link> </li>
                     </ul>
                     
                     <div className="logo">
                         <img src={AyBooks_name} alt="AyBooks" />
                     </div>
-                    <div className="search header-right-icon">
+                    {/* <div className="search header-right-icon">
                         <img src={search} alt="Search here" />
                     </div>
                     <div className="cart header-right-icon">
                         <img src={cart} alt="Add items to cart" />
-                    </div>
+                    </div> */}
                 </nav>
             </header>
         </div >
@@ -114,24 +114,4 @@ const Header = () => {
 }
 
 
-// =================================================== //
-
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".navMenu");
-
-// hamburger.addEventListener("click", () => {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
-
-// document.querySelectorAll(".nav-link").forEach(element => {
-//     element.addEventListener("click", () => {
-//         hamburger.classList.remove("active");
-//         navMenu.classList.remove("active");
-//     })
-// });
-
-// =================================================== //
-
-
-export default Header
+export default AdminDashboard

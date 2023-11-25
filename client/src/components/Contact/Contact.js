@@ -6,7 +6,7 @@ import '../Contact/contact.css';
 const Contact = () => {
     return (
         <div>
-            <div class="shop-bg">
+            <div className="shop-bg">
                 <p>Contact Us</p>
             </div>
 

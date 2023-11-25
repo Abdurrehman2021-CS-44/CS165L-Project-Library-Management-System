@@ -16,19 +16,19 @@ const Home = () => {
     return (
         <div>
 
-            <div class="img-slider">
-                <div class="slider-one">
-                    <div class="slider-one-image">
-                        <div class="slider-text">
+            <div className="img-slider">
+                <div className="slider-one">
+                    <div className="slider-one-image">
+                        <div className="slider-text">
                             <h1>NOTHING IS PLEASANTER THAN EXPLORING A LIBRARY</h1>
                             <p>Walter Savage Landor (American fantasy Author and Poet)</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="slider-two">
-                    <div class="slider-two-image">
-                        <div class="slider-text">
+                <div className="slider-two">
+                    <div className="slider-two-image">
+                        <div className="slider-text">
                             <h1>WHEN IN DOUBT GO TO LIBRARY</h1>
                             <p>J.K. Rowling (British novelist, screenwriter, and producer, best known for writing the Harry
                                 Potter fantasy series)</p>
@@ -36,9 +36,9 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div class="slider-three">
-                    <div class="slider-three-image">
-                        <div class="slider-text">
+                <div className="slider-three">
+                    <div className="slider-three-image">
+                        <div className="slider-text">
                             <h1>LIBRARIES STORE THE ENERGY THAT FUELS THE IMAGINATION</h1>
                             <p>Sidney Sheldon (American writer and producer)</p>
                         </div>
@@ -46,23 +46,23 @@ const Home = () => {
                 </div>
             </div>
 
-            <div class="website-intro">
-                <div class="text">
+            <div className="website-intro">
+                <div className="text">
                     <span>Upcoming</span>
-                    <p class="intro-heading">The Vein Of Gold: A Journey To Your Creative Heart</p>
-                    <p class="ad-book-author">Author: Dr. Ayesha Ashfaq</p>
+                    <p className="intro-heading">The Vein Of Gold: A Journey To Your Creative Heart</p>
+                    <p className="ad-book-author">Author: Dr. Ayesha Ashfaq</p>
                     <p>Embark on a transformative odyssey into the depths of your creativity with "The Vein of Gold: A Journey
                         to Your Creative Heart," the eagerly anticipated upcoming book by our distinguished university
                         professor.She has masterfully crafted a guide that promises to ignite the spark of creativity within
                         every reader. This compelling literary journey invites you to explore the uncharted territories unearth
                         the treasures hidden within your creative heart.</p>
                 </div>
-                <div class="intro-img">
+                <div className="intro-img">
                     <img src={book_ad} />
                 </div>
             </div>
 
-            <div class="book-shelf">
+            <div className="book-shelf">
                 <ul>
                     <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book10.jpg" alt="" /></li>
                     <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book02.jpg" alt="" /></li>
@@ -87,25 +87,25 @@ const Home = () => {
                     <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book21.jpg" alt="" /></li>
                     <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book22.jpg" alt="" /></li>
                     <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book23.jpg" alt="" /></li>
-                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt="" /></li>                
+                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/book24.jpg" alt="" /></li>
                 </ul>
             </div>
 
-            <div class="parallax">
-                <div class="festival-ad">
+            <div className="parallax">
+                <div className="festival-ad">
                     <p>Shop wide range of collections</p>
-                    <p class="heading">Book Festival</p>
-                    <p class="off">ALL BOOKS ARE FLAT <span>15% OFF</span></p>
-                    <p class="duration">18 September till 25 October</p>
-                    <button class="btn"><a href="shop.html">Shop Now</a></button>
+                    <p className="heading">Book Festival</p>
+                    <p className="off">ALL BOOKS ARE FLAT <span>15% OFF</span></p>
+                    <p className="duration">18 September till 25 October</p>
+                    <button className="btn"><a href="shop.html">Shop Now</a></button>
                 </div>
             </div>
 
-            <div class="partners">
-                <div class="text">
+            <div className="partners">
+                <div className="text">
                     <h1><span>Our </span>Publishers</h1>
                 </div>
-                <div class="partners-grid">
+                <div className="partners-grid">
                     <img src={urduTimes} />
                     <img src={jang} />
                     <img src={caravan} />

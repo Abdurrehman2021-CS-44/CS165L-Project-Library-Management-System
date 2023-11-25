@@ -19,47 +19,47 @@ const Footer = () => {
     return (
         <div>
             <footer>
-                <div class="info">
-                    <div class="logo-detail">
+                <div className="info">
+                    <div className="logo-detail">
                         <img src={AyBooks_logo} alt='logo' />
                         <p>"Libraries store the energy that fuels the imagination. They open up windows to the world and inspire
                             us to explore and achieve, and contribute to improving our quality of life."</p>
                     </div>
 
-                    <div class="social-links">
-                        <p class="link-heading">Connect with us</p>
-                        <div class="instagram">
+                    <div className="social-links">
+                        <p className="link-heading">Connect with us</p>
+                        <div className="instagram">
                             <img src={instagram} />
                             <p>Instagram</p>
                         </div>
-                        <div class="facebook">
+                        <div className="facebook">
                             <img src={facebook} />
                             <p>Facebook</p>
                         </div>
-                        <div class="twitter">
+                        <div className="twitter">
                             <img src={twitter} />
                             <p>Twitter</p>
                         </div>
                     </div>
 
-                    <div class="contact-us">
-                        <p class="contact-heading">Contact Us</p>
-                        <div class="phone">
+                    <div className="contact-us">
+                        <p className="contact-heading">Contact Us</p>
+                        <div className="phone">
                             <img src={phone} />
                             <p>+1 013-275-8916</p>
                         </div>
-                        <div class="email">
+                        <div className="email">
                             <img src={message} />
                             <p>info@AyWood's.org</p>
                         </div>
-                        <div class="location">
+                        <div className="location">
                             <img src={location} />
                             <p>2250 Crystal Springs Ds Los Angeles, CA 90027</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="copyright">
+                <div className="copyright">
                     All rights reserved. &nbsp; <span>&copy;</span> Ayesha Ashfaq.
                 </div>
             </footer>
