@@ -118,8 +118,8 @@ tbody tr td:last-child img {
     height: 42px;
     margin-right: .5rem;
     /* border-radius: 50%; */
-
     cursor: pointer;
+
     vertical-align: middle;
 }
 
@@ -339,7 +339,6 @@ tbody td.active {
 
 
 /*#region */
-
 
 .add_book {
     margin: 5rem 2rem;

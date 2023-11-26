@@ -2,8 +2,17 @@ const express = require('express');
 const router = express.Router();
 
 require('../db/conn');
+
 const Book = require('../model/book');
 const Category = require('../model/category');
+const Admin = require('../model/admin');
+const Credentials = require('../model/credentials');
+const Customer = require('../model/customer');
+const Order = require('../model/order');
+const OrderDetail = require('../model/order_detail');
+const Review = require('../model/review');
+const Stock = require('../model/stock');
+const Transaction = require('../model/transaction');
 
 router.get('/', (req, res) => {
     res.send('AyBook store, a heaven for Book Readers routerr');
@@ -38,24 +47,26 @@ router.get('/', (req, res) => {
 
 //======================= With Async Await ========================//
 
-router.post('/about', async (req, res) => {
+// CUSTOMER
 
-    const { ISBN, title, author, edition, category_id, price, publisher, img_path } = req.body;
+router.post('/signup', async (req, res) => {
 
-    if (!ISBN || !title || !author || !edition || !category_id || !price || !publisher || !img_path) {
+    const { name, CNIC, address, debit_card, mm_yy, cvc, phone } = req.body;
+
+    if (!name || !CNIC || !address || !debit_card || !mm_yy || !cvc || !phone) {
         return res.status(422).json({ error: "Fill all fields" });
     }
 
     try {
-        const bookExist = await Book.findOne({ ISBN: ISBN });
-        if (bookExist) {
-            return res.status(422).json({ error: "Book with this ISBN already exists" });
+        const customerExist = await Customer.findOne({ CNIC: CNIC });
+        if (customerExist) {
+            return res.status(422).json({ error: "Customer with this CNIC already exists" });
         }
 
-        const book = new Book({ ISBN, title, author, edition, category_id, price, publisher, img_path});
+        const customer = new Customer({ name, CNIC, address, debit_card, mm_yy, cvc, phone });
         // const bookAdd = await book.save();
-        if (await book.save()) {
-            res.status(201).json({ message: 'Book added successfully' });
+        if (await customer.save()) {
+            res.status(201).json({ message: 'Customer added successfully' });
         }
         else {
             // else na bhi use kro, okay hai, cause error catch() me chla jaye ga

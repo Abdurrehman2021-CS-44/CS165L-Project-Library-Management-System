@@ -20,6 +20,16 @@
     line-height: 2;
 }
 
+.login-signup .error {
+    display: none;
+    font-size: 0.9rem;
+    color: #c30024;
+    background-color:  #ff7b7b82;
+    padding: 0.7rem 0.9rem;
+    margin: 0 0 0.5rem;
+    border-radius: 4px;
+}
+
 .login-signup .info {
     line-height: 3;
     color: #989898;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../Login/login.css';
 
@@ -19,9 +19,9 @@ const Login = () => {
                     <p className="heading">REGISTERED CUSTOMERS</p>
                     <p className="info">If you have an account with us, Please login!</p>
                     <form>
-                        <input type="text" name="" id="Userame" autoComplete='off' placeholder="Userame" />
-                        <input type="password" id="password" autoComplete='off' placeholder="Password" />
-                        <input type="password" id="confirmPassword" autoComplete='off' placeholder="Confirm Password" />
+                        <input type="text" name="" id="Userame" placeholder="Userame" />
+                        <input type="password" id="password" placeholder="Password" />
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" />
                         <input className="btn" type="submit" name='login' id='login' value="LOGIN" />
                     </form>
                 </div>

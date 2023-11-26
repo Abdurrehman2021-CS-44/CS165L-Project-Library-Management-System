@@ -6,7 +6,7 @@
 :root {
   --primary-color: #4b1e02;
   /* Color in logo */
-  --secondary-color: #A77426;
+  --secondary-color1: #A77426;
   --secondary-color: #c8a165;
 
   --gradient-color: linear-gradient(90deg, #4b1e02, #92651d, rgb(182, 149, 99));

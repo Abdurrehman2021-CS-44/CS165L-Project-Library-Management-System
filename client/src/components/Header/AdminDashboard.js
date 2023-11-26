@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import '../Home/Home'
 
 // import { AyBooks_logo_removebg, AyBooks_name_removebg, cart, search } from 'assets';
 import AyBooks_logo from '../../assets/AyBooks_logo.png';
 import AyBooks_name from '../../assets/AyBooks_name.png';
 import cart from '../../assets/cart.png';
 import search from '../../assets/search.png';
+import Home from '../Home/Home';
 
 
 // ================  IMPORT  IMAGES  ================= //
@@ -82,34 +84,25 @@ const AdminDashboard = () => {
 
                     <ul className="navMenu">
                         <li className="library-logo"><img src={AyBooks_logo} alt="logo" /></li>
-                        <li className="nav-item"> <Link className="nav-link" to="/">Books</Link> </li>
-                        {/* <li className="nav-item shop"> <Link className="nav-link" to="">Catalog <span>&rsaquo;</span> </Link>
-                            <ul className="shop-dropdown">
-                                <li> <Link className="nav-link" to="/shop">Books</Link> </li>
-                                <li> <Link className="nav-link" to="/">Cart</Link> </li>
-                                <li> <Link className="nav-link" to="/">Wishlist</Link> </li>
-                                <li> <Link className="nav-link" to="/">Checkout</Link> </li>
-                            </ul>
-                        </li> */}
-                        <li className="nav-item"> <Link className="nav-link" to="/login">Customers</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/signup">Category</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/faq">Orders</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/contact">Reviews</Link> </li>
-                        <li className="nav-item"> <Link className="nav-link" to="/contact">Feedback</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/">Home</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/book">Books</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/customer">Customers</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/category">Category</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/order">Orders</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/reviews">Reviews</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link" to="/feedback">Feedback</Link> </li>
                     </ul>
-                    
+
                     <div className="logo">
                         <img src={AyBooks_name} alt="AyBooks" />
                     </div>
-                    {/* <div className="search header-right-icon">
-                        <img src={search} alt="Search here" />
-                    </div>
-                    <div className="cart header-right-icon">
-                        <img src={cart} alt="Add items to cart" />
-                    </div> */}
                 </nav>
             </header>
+
+            {/* <Home/> */}
+
         </div >
+
     )
 }
 

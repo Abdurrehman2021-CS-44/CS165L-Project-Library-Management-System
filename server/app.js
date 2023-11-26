@@ -1,14 +1,17 @@
 const express = require('express');
+const cors = require('cors');
+
+
 const app = express();
 
 require('./db/conn');
 
-// const Book = require('./model/book');
-// const Category = require('./model/category');
-
 app.use(express.json());
-
+app.use(cors());
 app.use(require('./routes/auth'));
+app.use(require('./routes/bookRoutes'));
+app.use(require('./routes/customerRoutes'));
+app.use(require('./routes/categoryRoutes'));
 
 // Middleware
 
@@ -18,8 +21,6 @@ const middleware = (req, res, next) => {
 }
 
 // middleware();
-
-
 
 app.get('/', (req, res) => {
     res.send('AyBook store, a heaven for Book Readers')

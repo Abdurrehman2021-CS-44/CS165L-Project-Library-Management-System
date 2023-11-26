@@ -5,6 +5,8 @@ const bookSchema = new Schema({
     ISBN: {
         type: String,
         unique: true,
+        minLength: 13,
+        maxLength: 13,
         required: true,
     },
     title: {
